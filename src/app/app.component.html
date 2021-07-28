@@ -15,10 +15,6 @@
     <i class="material-icons">refresh</i>
   </div>
   <div class="top-section">
-    <!-- <h1>19:00</h1> -->
-    <!-- <h2>{{1 January 2020}}</h2> -->
-    <!-- <h1>{{ dateTime | date: "HH:m" }}</h1>
-    <h2>{{ dateTime | date: "d MMMM y" }}</h2> -->
     <h1>{{ dateTime | async | date: "HH:mm" }}</h1>
     <h2>{{ dateTime | async | date: "d MMMM y" }}</h2>
   </div>

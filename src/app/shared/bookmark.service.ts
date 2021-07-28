@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { BookmarksComponent } from '../bookmarks/bookmarks.component';
 import { Bookmark } from './bookmark.model';
 
 @Injectable({

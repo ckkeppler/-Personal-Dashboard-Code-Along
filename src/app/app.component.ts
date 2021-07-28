@@ -33,15 +33,6 @@ const baseStyles = style({
         }),
         query(':enter, :leave', [baseStyles], { optional: true }),
 
-        // query(
-        //   ':enter',
-        //   [
-        //     style({
-        //       opacity: '0',
-        //     }),
-        //   ],
-        //   { optional: true }
-        // ),
         group([
           query(
             ':leave',
@@ -83,15 +74,6 @@ const baseStyles = style({
         }),
         query(':enter, :leave', [baseStyles], { optional: true }),
 
-        // query(
-        //   ':enter',
-        //   [
-        //     style({
-        //       opacity: '0',
-        //     }),
-        //   ],
-        //   { optional: true }
-        // ),
         group([
           query(
             ':leave',
@@ -226,14 +208,9 @@ export class AppComponent implements OnInit {
   ];
   loadingBGImage?: boolean;
 
-  // dateTime?: Date;
   dateTime?: Observable<Date>;
 
   ngOnInit() {
-    // this.dateTime = new Date();
-    // timer(0, 1000).subscribe(() => {
-    //   this.dateTime = new Date();
-    // });
     this.dateTime = timer(0, 1000).pipe(
       map(() => {
         return new Date();

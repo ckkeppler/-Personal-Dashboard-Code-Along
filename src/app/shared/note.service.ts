@@ -60,6 +60,4 @@ export class NoteService {
       console.log(e);
     }
   }
-
-  // ngOnDestroy() {}
 }
